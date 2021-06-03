@@ -1,4 +1,4 @@
-export default class HtmlPrettyConsoleWebpackPlugin {
+class HtmlPrettyConsoleWebpackPlugin {
   constructor(options = {}) {
     this.options = options
     this.options.output = options.output || [{ label: '打包时间', value: new Date().toString() }]
@@ -13,12 +13,10 @@ export default class HtmlPrettyConsoleWebpackPlugin {
       outputConsole += `console.log('%c ${item.label} %c ${item.value} %c', 'background:#35495e ; padding: 2px; border-radius: 3px 0 0 3px;  color: #fff', 'background:#41b883 ; padding: 2px; border-radius: 0 3px 3px 0;  color: #fff', 'background:transparent');`
     }
     outputConsole += '</script>'
-    if (inject === 'head') {
+    if (inject === 'body') {
       content = this.insertbefore(content, '</head>', outputConsole)
-    } else if (inject === 'body') {
-      content = this.insertbefore(content, '</body>', outputConsole)
     } else {
-      content = this.insertbefore(content, inject, outputConsole)
+      content = this.insertbefore(content, '</body>', outputConsole)
     }
     return content
   }
@@ -40,3 +38,4 @@ export default class HtmlPrettyConsoleWebpackPlugin {
     })
   }
 }
+module.exports = HtmlPrettyConsoleWebpackPlugin

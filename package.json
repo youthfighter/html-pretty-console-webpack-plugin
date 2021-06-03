@@ -1,0 +1,31 @@
+{
+  "name": "html-pretty-console-webpack-plugin",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youthfighter/html-pretty-console-webpack-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youthfighter/html-pretty-console-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/youthfighter/html-pretty-console-webpack-plugin#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.2",
+    "babel": "^6.23.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.27.0",
+    "jest": "^27.0.3"
+  },
+  "files": [
+    "package.json",
+    "src",
+    "readme.md"
+  ]
+}

@@ -14,9 +14,9 @@ class HtmlPrettyConsoleWebpackPlugin {
     }
     outputConsole += '</script>'
     if (inject === 'body') {
-      content = this.insertbefore(content, '</head>', outputConsole)
-    } else {
       content = this.insertbefore(content, '</body>', outputConsole)
+    } else {
+      content = this.insertbefore(content, '</head>', outputConsole)
     }
     return content
   }

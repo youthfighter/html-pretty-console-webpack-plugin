@@ -1,6 +1,8 @@
 # html-pretty-console-webpack-plugin
 一个webpack插件，可以将打包相关的信息以较优美的方式插入html中，最终输出到浏览器的工作台。
 
+[![NPM](https://nodei.co/npm/html-pretty-console-webpack-plugin.png)](https://nodei.co/npm/html-pretty-console-webpack-plugin/)
+
 ## 使用
 
 可以使用 `npm` 或者 `yarn` 来安装插件:

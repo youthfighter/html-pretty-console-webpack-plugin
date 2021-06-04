@@ -26,6 +26,6 @@
   "files": [
     "package.json",
     "src",
-    "readme.md"
+    "README.md"
   ]
 }

@@ -31,7 +31,7 @@ module.exports = {
 
 执行 `npm run build` 指令，插件会将 `output` 中的相关信息自动插入入口 `html` 中。当运行 `html` 时，效果如下图所示
 
-![最终效果](.\images\console.png)
+![最终效果](https://raw.githubusercontent.com/youthfighter/html-pretty-console-webpack-plugin/master/images/console.png)
 
 ## API
 
@@ -41,11 +41,11 @@ module.exports = {
 
 ### inject [String, optional]
 
-`cosnole` 脚本插入的位置，目前仅支持 `head` 和 `body`。
+`cosnole` 脚本插入的位置，目前仅支持 `head` 和 `body`，默认值为 `head`。
 
 ### output [Object, optional] 
 
-要输出到控制台的信息。
+要输出到控制台的信息。默认值为 `[{ label: '打包时间', value: new Date().toString() }]`
 
 ## LICENSE
 

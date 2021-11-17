@@ -26,7 +26,7 @@ jobs:
         cache: 'npm'
         cache-dependency-path: package-lock.json
     - name: Publish to GitHub Package
-      run: npm publish || true
+      run: npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
